@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Feed Adrian</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                    <h3><i class="fa-brands fa-instagram"></i></h3>
+                    <h4>Instagram</h4>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Create a new post
+                    </button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>Caption:</h6>
+                <textarea class="form-control" placeholder="Add the caption of your post here" id="floatingTextarea"></textarea>
+                <button type="button" class="btn btn-light border mt-2 me-1"><i class="fa-solid fa-camera"></i></button>
+                <button type="button" class="btn btn-light border mt-2"><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success">Publish</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+        <ul class="nav justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+            </li>
+        </ul>
+        <div class="tab-content container-fluid" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw;" src="https://media.cnn.com/api/v1/images/stellar/prod/cnne-1239963-stray-destaca-por-su-estilo-artistico.jpg?c=original" class="img-fluid w-100 object-fit-cover" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw" src="https://niveloculto.com/wp-content/uploads/2022/08/Stray-portada.jpg" class="img-fluid w-100 object-fit-cover" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw" src="https://imagedelivery.net/WLUarKbmUXuuhDC7PG5_Qw/articles/c8426601a981185b735b73c92dd48dc2.jpeg/public" class="img-fluid w-100 object-fit-cover" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw" src="https://joyofandroid.com/wp-content/uploads/2022/08/Stray-Video-Game-Joy-Of-Android-Feature-Image-.png" class="img-fluid w-100 object-fit-cover" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw" src="https://static0.colliderimages.com/wordpress/wp-content/uploads/2023/09/stray.jpg?w=1200&h=675&fit=crop" class="img-fluid w-100 object-fit-cover" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw" src="https://cdn.mos.cms.futurecdn.net/7eCMazXkWaxis9Gaq8oj8S.png" class="img-fluid w-100 object-fit-cover" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 p-1"><img style="height: 30vw" src="https://www.nintendojo.com/wp-content/uploads/2024/11/IMG_1701-640x360.jpg" class="img-fluid w-100 object-fit-cover" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw" src="https://bloody-disgusting.com/wp-content/uploads/2023/05/stray.jpg" class="img-fluid w-100 object-fit-cover" alt=""></div>
+                    <div class="col-4 p-1"><img style="height: 30vw" src="https://i.iplsc.com/000FTJ3AS2U69UGQ-C323-F4.webp" class="img-fluid w-100 object-fit-cover" alt=""></div>
+                </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+                <div class="row">
+                    <div class="col-6 p-1 mx-auto mt-2 mb-2">
+                        <div class="card-header d-flex justify-content-between border rounded-top w-100 p-2 bg-light">
+                            <div class="fs-5">Creo que me perdi!</div>
+                            <div class="fs-7">08/26</div>
+                        </div>
+                        <img src="https://niveloculto.com/wp-content/uploads/2022/08/Stray-portada.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column border rounded-bottom w-100 p-2 bg-light">
+                            <p class="card-title fw-bold">34688 Likes</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, semper netus feugiat fusce at mus, tempor habitasse congue sem auctor nostra.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 p-1 mx-auto mt-2 mb-2">
+                        <div class="card-header d-flex justify-content-between border rounded-top w-100 p-2 bg-light">
+                            <div class="fs-5">Aaahm... creo que estoy en el metro</div>
+                            <div class="fs-7">08/27</div>
+                        </div>
+                        <img src="https://joyofandroid.com/wp-content/uploads/2022/08/Stray-Video-Game-Joy-Of-Android-Feature-Image-.png" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column border rounded-bottom w-100 p-2 bg-light">
+                            <p class="card-title fw-bold">36436 Likes</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, semper netus feugiat fusce at mus, tempor habitasse congue sem auctor nostra.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 p-1 mx-auto mt-2 mb-2">
+                        <div class="card-header d-flex justify-content-between border rounded-top w-100 p-2 bg-light">
+                            <div class="fs-5">Que es esto!?</div>
+                            <div class="fs-7">08/28</div>
+                        </div>
+                        <img src="https://bloody-disgusting.com/wp-content/uploads/2023/05/stray.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column border rounded-bottom w-100 p-2 bg-light">
+                            <p class="card-title fw-bold">53463 Likes</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, semper netus feugiat fusce at mus, tempor habitasse congue sem auctor nostra.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 p-1 mx-auto mt-2 mb-2">
+                        <div class="card-header d-flex justify-content-between border rounded-top w-100 p-2 bg-light">
+                            <div class="fs-5">Llegue a mi casita :)</div>
+                            <div class="fs-7">08/29</div>
+                        </div>
+                        <img src="https://www.nintendojo.com/wp-content/uploads/2024/11/IMG_1701-640x360.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column border rounded-bottom w-100 p-2 bg-light">
+                            <p class="card-title fw-bold">134234 Likes</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipiscing elit, semper netus feugiat fusce at mus, tempor habitasse congue sem auctor nostra.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+                           
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8ade12ddaa.js" crossorigin="anonymous"></script>
+</body>
+</html>
